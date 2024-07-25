@@ -1,13 +1,4 @@
-import coffe from "../../assets/Coffe.img.png"
-import daniales from "../../assets/Daniales.img.png"
-import devfolio from "../../assets/Devfolio.img.png"
-import fokir from "../../assets/Fokir.img.png"
-import crud from "../../assets/Curd.js.img.png"
-import qoute from "../../assets/Quote.js.img.png"
-import restApi from "../../assets/RestApi.js.img.png"
-import bookmark from "../../assets/BookMark.js.img.png"
-import weather from "../../assets/weather.js.img.png"
-import frechCart from "../../assets/FrechCart.png"
+
 
 export const myProjects = [
   {
@@ -15,7 +6,7 @@ export const myProjects = [
     title: "Coffe Web Site",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur ea doloremque non quo totam ipsum dolor sit amet consectetur",
-    imgProject:{coffe},
+    imgProject:"../../assets/Coffe.img.png",
     githup: "https://github.com/Omar-Yousef-Shaheen/Coffe-website.git",
     page: " https://omar-yousef-shaheen.github.io/Coffe-website/",
   },
@@ -24,7 +15,7 @@ export const myProjects = [
     title: "Daniles Web Site",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur ea doloremque non quo totam ipsum dolor sit amet consectetur",
-    imgProject: {daniales},
+    imgProject: "../../assets/Daniales.img.png",
     githup: "https://github.com/Omar-Yousef-Shaheen/Daniels.git",
     page: "https://omar-yousef-shaheen.github.io/Daniels/",
   },
@@ -33,7 +24,7 @@ export const myProjects = [
     title: "DevFoilo Web Site",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur ea doloremque non quo totam ipsum dolor sit amet consectetur",
-    imgProject: {devfolio},
+    imgProject: "../../assets/Devfolio.img.png",
     githup: "https://github.com/Omar-Yousef-Shaheen/Devfolio-Portfolio.git",
     page: "https://omar-yousef-shaheen.github.io/Devfolio-Portfolio/",
   },
@@ -42,7 +33,7 @@ export const myProjects = [
     title: "Fokir Web Site",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur ea doloremque non quo totam ipsum dolor sit amet consectetur",
-    imgProject: {fokir},
+    imgProject: "../../assets/Fokir.img.png",
     githup: "https://github.com/Omar-Yousef-Shaheen/Fokir.git",
     page: "https://omar-yousef-shaheen.github.io/Fokir/",
   },
@@ -51,7 +42,7 @@ export const myProjects = [
     title: "Crud Operation",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur ea doloremque non quo totam ipsum dolor sit amet consectetur",
-    imgProject: {crud},
+    imgProject: "../../assets/Curd.js.img.png",
     githup: "https://github.com/Omar-Yousef-Shaheen/TodoApp-with-Crud.git",
     page: "https://omar-yousef-shaheen.github.io/TodoApp-with-Crud/",
   },
@@ -60,7 +51,7 @@ export const myProjects = [
     title: "Login system",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur ea doloremque non quo totam ipsum dolor sit amet consectetur",
-    imgProject: {crud},
+    imgProject:"../../assets/Curd.js.img.png",
     githup: "https://github.com/Omar-Yousef-Shaheen/TodoApp-with-Crud.git",
     page: "https://omar-yousef-shaheen.github.io/TodoApp-with-Crud/",
   },
@@ -69,7 +60,7 @@ export const myProjects = [
     title: "Quote Of Day",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur ea doloremque non quo totam ipsum dolor sit amet consectetur",
-    imgProject:{qoute},
+    imgProject:"../../assets/Quote.js.img.png",
     githup: "https://github.com/Omar-Yousef-Shaheen/Quote.git",
     page: "https://omar-yousef-shaheen.github.io/Quote/",
   },
@@ -78,7 +69,7 @@ export const myProjects = [
     title: "Rest API",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur ea doloremque non quo totam ipsum dolor sit amet consectetur",
-    imgProject: {restApi},
+    imgProject: "../../assets/RestApi.js.img.png",
     githup: "https://github.com/Omar-Yousef-Shaheen/Rest-Api.git",
     page: " https://omar-yousef-shaheen.github.io/Rest-Api/",
   },
@@ -87,7 +78,7 @@ export const myProjects = [
     title: "Book Mark Crud",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur ea doloremque non quo totam ipsum dolor sit amet consectetur",
-    imgProject: {bookmark},
+    imgProject: "../../assets/BookMark.js.img.png",
     githup: "https://github.com/Omar-Yousef-Shaheen/BookMark.git",
     page: "https://omar-yousef-shaheen.github.io/BookMark/",
   },
@@ -96,7 +87,7 @@ export const myProjects = [
     title: "Weather useing Api",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur ea doloremque non quo totam ipsum dolor sit amet consectetur",
-    imgProject: {weather},
+    imgProject: "../../assets/weather.js.img.png",
     githup: "https://github.com/Omar-Yousef-Shaheen/Weather-App.git",
     page: "https://omar-yousef-shaheen.github.io/Weather-App/",
   },
@@ -105,7 +96,7 @@ export const myProjects = [
     title: "Frech-Cart",
     subTitle:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero consectetur ea doloremque non quo totam ipsum dolor sit amet consectetur",
-    imgProject:{frechCart},
+    imgProject: "../../assets/FrechCart.png" ,
     githup: "https://github.com/Omar-Yousef-Shaheen/FreshCart.git",
     page: "https://frech-cart.surge.sh/",
   },
