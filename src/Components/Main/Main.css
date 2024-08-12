@@ -26,7 +26,7 @@ main section.left-section.flex button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.25;
   letter-spacing: 0.4px;
   transition: 0.5s all;
 }
@@ -37,6 +37,7 @@ main section.left-section.flex button.active {
   letter-spacing: 0.6px;
   scale: 1.04;
   border: 1px solid var(--border);
+  box-shadow: 1px 1px 7px var(--border);
 }
 
 main section.left-section.flex button:hover {
