@@ -29,7 +29,7 @@ export default function Header() {
       <nav>
         <ul className="flex">
           <li>
-            <Link to="about">About</Link>
+            <Link to="/">About</Link>
           </li>
           <li>
             <Link to="projects">Projects</Link>
