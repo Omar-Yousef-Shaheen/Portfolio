@@ -1,0 +1,131 @@
+/* 
+1-=====Design Navbar========
+*/
+header.flex {
+  margin-top: 1.2rem;
+  justify-content: space-between;
+  padding-inline: 32px;
+}
+
+header.flex nav {
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 50px;
+  box-shadow: 1px 1px 16px rgba(71, 71, 71, 0.316);
+}
+header ul.flex {
+  gap: 16px;
+}
+
+header ul li a {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+}
+
+/* 2-========style icons======== */
+header span.icon-menu,
+button.icon-moon {
+  font-size: 1.3rem;
+  background: var(--bgHeader);
+  padding: 10px;
+  color: var(--subtitle);
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: 0.3s all;
+}
+span.icon-close {
+  cursor: pointer;
+  color: var(--subtitle);
+  transition: 0.3s all;
+}
+
+header span.icon-menu:hover,
+button.icon-moon:hover {
+  color: var(--title);
+  border: 1px solid var(--title);
+}
+
+span.icon-close:hover {
+  color: crimson;
+}
+
+header span.icon-menu:active,
+button.icon-moon:active,
+span.icon-close:active {
+  scale: 0.9;
+}
+
+header span.menu {
+  display: none;
+}
+
+/* 3-========= Modal & pop up ========= */
+header .fixed {
+  position: fixed;
+  inset: 0;
+  background: #2324318c;
+  z-index: 99;
+  backdrop-filter: blur(4px);
+}
+
+@keyframes scaleModal {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+header .fixed ul.modal {
+  animation: scaleModal 0.5s 1;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background: var(--secondary);
+}
+
+header .fixed ul.modal li {
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+header .fixed ul.modal li a {
+  font-size: 1rem;
+}
+
+header .fixed ul.modal li:last-child {
+  border: none;
+}
+
+header .fixed ul.modal li:first-child {
+  border: none;
+  text-align: right;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+}
+
+/* 4-====Media-Qurey====== */
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+
+  header span.menu {
+    display: block;
+  }
+}

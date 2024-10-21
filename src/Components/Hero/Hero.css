@@ -1,0 +1,91 @@
+section.hero {
+  padding: 2rem;
+  background: var(--bgHeader);
+  border-radius: 10px;
+  gap: 26px;
+}
+
+/* 
+======================
+1-leftSection
+======================
+*/
+section.hero .left-section {
+  flex-grow: 1;
+}
+
+section.hero .left-section h1.title {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-block: 20px;
+  color: var(--title);
+  
+}
+
+section.hero .left-section h1.title .my-name {
+  min-height: 80px;
+  color: var(--blue);
+}
+
+section.hero .left-section p.sub-title {
+  text-transform: capitalize;
+  color: var(--subtitle);
+  font-weight: bold;
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+  margin-bottom: 2rem;
+}
+
+section.hero .left-section .all-icons.flex {
+  justify-content: center;
+  gap: 36px;
+  font-size: 1.4rem;
+}
+
+section.hero .left-section .all-icons.flex a.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--subtitle);
+  font-weight: bold;
+  /* border: 1px solid var(--subtitle);   */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bgHeader);
+  transition: 0.3s all;
+}
+
+section.hero .left-section .all-icons.flex a.icon:hover {
+  scale: 1.1;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px var(--shadow);
+  /* border: 1px solid var(--blue); */
+}
+
+/* 
+======================
+2-rightSection(animation)
+======================
+*/
+
+
+
+@media (max-width: 768px) {
+  section.hero .right-section .developer {
+    display: none;
+  }
+  section.hero .left-section h1.title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-block: 10px;
+    color: var(--title);
+  }
+  section.hero .left-section p.sub-title {
+    color: var(--subtitle);
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.45rem;
+    margin-bottom: 1rem;
+  }
+}

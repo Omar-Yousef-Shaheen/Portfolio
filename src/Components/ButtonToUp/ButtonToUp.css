@@ -1,0 +1,31 @@
+.to-Up button{
+  opacity: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--title);
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(22, 67, 229 , 0.7);
+  position: fixed;
+  bottom: 2rem;
+  right: 5%;
+  z-index: 99;
+  transition: .5s all;
+}
+
+.to-Up button:hover{
+  cursor: pointer;
+  background:rgb(22, 67, 229 , 1);
+}
+
+.btnOpacity{
+  opacity: 0;
+}
+
+@media (max-width: 425px) {
+  .to-Up button{
+    opacity: 1;
+  }
+}

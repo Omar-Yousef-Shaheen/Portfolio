@@ -1,0 +1,142 @@
+section.contact-us .main-title {
+  flex-direction: column;
+}
+
+section.contact-us .main-title .title {
+  font-size: 2rem;
+  color: var(--title);
+  margin-bottom: 1rem;
+}
+
+section.contact-us .main-title .icon-envelope {
+  color: var(--subtitle);
+  margin-right: 0.75rem;
+  font-size: 1.8rem;
+}
+
+section.contact-us .main-title .sub-title {
+  color: var(--subtitle);
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+section.contact-us .info {
+  justify-content: space-between;
+}
+
+section.contact-us .input-two,
+section.contact-us .input-one {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+section.contact-us label {
+  color: var(--title);
+}
+section.contact-us .input-one {
+  margin-bottom: 2rem;
+}
+
+section.contact-us #email,
+section.contact-us #message {
+  all: unset;
+  background: rgba(63, 63, 70, 0.15);
+  border: 1px solid var(--bgHeader);
+  width: 16rem;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+  font-size: 1.1rem;
+  color: var(--title);
+  transition: all 0.3s;
+}
+
+section.contact-us #message {
+  min-height: 6rem;
+  resize: vertical;
+}
+
+section.contact-us #email:focus,
+section.contact-us #message:focus {
+  background: rgba(99, 99, 102, 0.15);
+  border: 1px solid var(--blue);
+  box-shadow: -1px -1px 15px var(--border);
+}
+
+section.contact-us .submit {
+  padding: 0.5rem 1.2rem;
+  text-align: center;
+
+  background: var(--bgHeader);
+  color: var(--title);
+  font-size: 1.06rem;
+  font-weight: bold;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1.8rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+}
+
+section.contact-us .submit:hover {
+  border: 1px solid var(--blue);
+  letter-spacing: 1px;
+}
+section.contact-us .message-Form {
+  color: var(--blue);
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 8px 14px;
+  background: var(--primary);
+  border: 1px solid var(--bgHeader);
+  border-radius: 20px;
+}
+
+/* 
+==============================
+==Responsive
+==============================
+*/
+
+@media (max-width: 768px) {
+  section.contact-us .animation {
+    display: none;
+  }
+  section.contact-us .info.flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  section.contact-us .info form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.contact-us .input-two,
+  section.contact-us .input-one {
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+  }
+
+  section.contact-us #email,
+  section.contact-us #message {
+    width: 100%;
+  }
+
+  section.contact-us .submit {
+    width: fit-content;
+    align-self: center;
+  }
+
+  section.contact-us .message-Form {
+    font-size: 0.8rem;
+  }
+}
