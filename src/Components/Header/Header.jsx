@@ -66,17 +66,17 @@ export default function Header() {
               />
             </li>
             <li>
-              <Link to="">About</Link>
+              <Link to="/">About</Link>
             </li>
             
             <li>
-              <Link to="#projects">Projects</Link>
+              <Link to="projects">Projects</Link>
             </li>
             <li>
               <Link to="">Speaking</Link>
             </li>
             <li>
-              <Link to="">Contact</Link>
+              <Link to="contact-us">Contact</Link>
             </li>
           </ul>
         </div>
