@@ -1,6 +1,9 @@
 import "./Main.css";
 import { useState } from "react";
 import { myProjects } from "./myProjects";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 export default function Main() {
 
@@ -54,25 +57,31 @@ export default function Main() {
           React
         </button>
       </section>
-      <section className="right-section flex">
-        {projects.map((item) => {
+      <section className="right-section flex"
+  
+      >
+        {projects?.map((item , index) => {
           return (
             <>
-              <article key={item.imgProject} className="card">
+              <motion.article key={index} className="card"
+               initial={{  scale: 0.6 , rotate : 0}}
+               animate={{  scale: 1  , rotate : 360}}
+               transition={{ duration: 0.2}}
+              >
               
-                <img className="img-Projects" src={item.imgProject} alt="" />
+                <img className="img-Projects" src={item?.imgProject} alt="" />
                 <div className="box">
-                  <h3 className="title">{item.title}</h3>
-                  <p className="subtitle">{item.subTitle}</p>
+                  <h3 className="title">{item?.title}</h3>
+                  <p className="subtitle">{item?.subTitle}</p>
                   <div className=" flex icons-box">
                     <div className="flex links-icons">
-                      <a href={item.page} target="_blank">
+                      <Link to={item?.page} target="_blank">
                         <span className="icon-link" />
-                      </a>
+                      </Link>
 
-                      <a href={item.githup} target="_blanck">
+                      <Link to={item?.githup} target="_blanck">
                         <span className="icon-github" />
-                      </a>
+                      </Link>
                     </div>
 
                     <div className="flex more-icon">
@@ -82,7 +91,7 @@ export default function Main() {
                   </div>
                 </div>
               
-              </article>
+              </motion.article>
               
             </>
           );

@@ -4,6 +4,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import doneAnimation from '../../animation/done.animation/Animation - 1720960721381.json'
 import contactAnimation from '../../animation/contact.animation/Animation - 1720961794535.json'
 import Lottie from "lottie-react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mwpepogy");
@@ -14,7 +15,11 @@ export default function Contact() {
     }
   }, [state.succeeded]);
   return (
-    <section className="contact-us" id="contact-us">
+    <motion.section className="contact-us" id="contact-us"
+    initial={{ scale: 0.5}}
+    animate={{ scale: 1}}
+    transition={{duration : 0.6}}
+    >
       <div className="flex main-title">
         <h1 className="title flex">
           <span className="icon-envelope" />
@@ -68,6 +73,6 @@ export default function Contact() {
           <Lottie style={{height : 440 }} animationData={contactAnimation}/>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

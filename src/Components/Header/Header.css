@@ -32,6 +32,7 @@ header ul li a:hover {
 /* 2-========style icons======== */
 header span.icon-menu,
 button.icon-moon {
+  margin-left: 4rem;
   font-size: 1.3rem;
   background: var(--bgHeader);
   padding: 10px;

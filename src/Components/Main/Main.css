@@ -52,6 +52,9 @@ main section.left-section.flex button:hover {
 */
 
 main section.right-section.flex {
+  background: var(--border);
+  padding: 1rem;
+  border-radius: 10px;
   flex-grow: 1;
   gap: 1rem;
   flex-wrap: wrap;
@@ -151,6 +154,7 @@ main section.right-section article.card {
 =============================================
 */
 @media (max-width: 768px) {
+  
   main.flex {
     flex-direction: column;
     align-items: center;
@@ -169,3 +173,4 @@ main section.right-section article.card {
     gap: 10px;
   }
 }
+

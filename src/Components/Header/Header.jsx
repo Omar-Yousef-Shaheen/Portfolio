@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem('currentMode') ?? 'dark');
-
   useEffect(() => {
     
     if (theme === "light") {
@@ -35,7 +34,7 @@ export default function Header() {
             <Link to="projects">Projects</Link>
           </li>
           <li>
-            <Link to="#">Speaking</Link>
+            <Link to="skills">Skills</Link>
           </li>
           <li>
             <Link to="contact-us">Contact</Link>
@@ -66,17 +65,26 @@ export default function Header() {
               />
             </li>
             <li>
-              <Link to="/">About</Link>
+              <Link onClick={()=>{
+                
+                showModal(false)
+              }} to="/">About</Link>
             </li>
             
             <li>
-              <Link to="projects">Projects</Link>
+              <Link  onClick={()=>{
+                showModal(false)
+              }}to="projects">Projects</Link>
             </li>
             <li>
-              <Link to="">Speaking</Link>
+              <Link  onClick={()=>{
+                showModal(false)
+              }}to="skills">Skills</Link>
             </li>
             <li>
-              <Link to="contact-us">Contact</Link>
+              <Link onClick={()=>{
+                showModal(false)
+              }} to="contact-us">Contact</Link>
             </li>
           </ul>
         </div>

@@ -1,6 +1,7 @@
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
 import { Outlet } from "react-router-dom"
+import ButtonToUp from "../ButtonToUp/ButtonToUp"
 
 
 function Layout() {
@@ -9,6 +10,7 @@ function Layout() {
    
          <Header/>
         <Outlet/>
+        <ButtonToUp />
         <Footer/>
    
     </div>
