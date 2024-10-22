@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+
+
 :root {
   --primary: #000;
   --secondary: #1c1c1f;
@@ -67,9 +69,18 @@ a {
   transition: 0.3s all;
 }
 
+.w-10{
+  width: 100px;
+}
+
+.w-9{
+  width: 70px;
+}
+
 .flex {
   display: flex;
   align-items: center;
+  
 }
 
 .border {

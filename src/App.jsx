@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Contact from "./Components/Contact/Contact";
 
 import Hero from "./Components/Hero/Hero";

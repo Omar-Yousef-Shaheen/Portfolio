@@ -17,7 +17,7 @@ export default function Header() {
   }, [theme]);
 
   return (
-    <header className="flex">
+    <header className="flex ">
       <span
         className="menu icon-menu"
         onClick={() => {
