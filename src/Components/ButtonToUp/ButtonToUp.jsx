@@ -4,7 +4,7 @@ export default function ButtonToUp() {
   const [showBtn, setShowBtn] = useState(false)
   useEffect(()=>{
     window.addEventListener('scroll' , ()=>{
-      if (scrollY > 200) {
+      if (scrollY > 100) {
         setShowBtn(true)
       
       }else{

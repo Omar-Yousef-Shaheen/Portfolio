@@ -4,9 +4,7 @@ import { myProjects } from "./myProjects";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-
 export default function Main() {
-
   const [currentActive, setcurrentActive] = useState("all");
   const [projects, setProjects] = useState(myProjects);
   // !Function Filtertion projects and set CurrentActive
@@ -57,18 +55,17 @@ export default function Main() {
           React
         </button>
       </section>
-      <section className="right-section flex"
-  
-      >
-        {projects?.map((item , index) => {
+      <section className="right-section flex">
+        {projects?.map((item, index) => {
           return (
             <>
-              <motion.article key={index} className="card"
-               initial={{  scale: 0.6 , rotate : 0}}
-               animate={{  scale: 1  , rotate : 360}}
-               transition={{ duration: 0.2}}
+              <motion.article
+                key={index}
+                className="card"
+                initial={{ scale: 0.6, rotate: 0 }}
+                animate={{ scale: 1, rotate: 360 }}
+                transition={{ duration: 0.2 }}
               >
-              
                 <img className="img-Projects" src={item?.imgProject} alt="" />
                 <div className="box">
                   <h3 className="title">{item?.title}</h3>
@@ -90,9 +87,7 @@ export default function Main() {
                     </div>
                   </div>
                 </div>
-              
               </motion.article>
-              
             </>
           );
         })}
