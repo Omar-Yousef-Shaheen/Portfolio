@@ -1,20 +1,19 @@
-import Header from "../Header/Header"
-import Footer from "../Footer/Footer"
-import { Outlet } from "react-router-dom"
-import ButtonToUp from "../ButtonToUp/ButtonToUp"
-
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import { Outlet } from "react-router-dom";
+import ButtonToUp from "../ButtonToUp/ButtonToUp";
 
 function Layout() {
-  return <>
-  <div className="layout">
-   
-         <Header/>
-        <Outlet/>
+  return (
+    <>
+      <div className="layout">
+        <Header />
+        <Outlet />
         <ButtonToUp />
-        <Footer/>
-   
-    </div>
+        <Footer />
+      </div>
     </>
+  );
 }
 
-export default Layout
+export default Layout;

@@ -1,15 +1,11 @@
-import html from '../../assets/img/html.png'
-import css from '../../assets/img/css.png'
-import js from '../../assets/img/js.png'
-import react from '../../assets/img/react.png'
-import redux from '../../assets/img/redux.png'
+import html from "../../assets/img/html.png";
+import css from "../../assets/img/css.png";
+import js from "../../assets/img/js.png";
+import react from "../../assets/img/react.png";
+import redux from "../../assets/img/redux.png";
 
 import { motion } from "framer-motion";
-import SkillBar from './SkillBar'
-
-
-
-
+import SkillBar from "./SkillBar";
 
 function Skills() {
   const skills = [
@@ -20,15 +16,13 @@ function Skills() {
     { image: redux, alt: "redux-img", level: 70, name: "Redux" },
   ];
   return (
-  <motion.div className="container bg-light bg-opacity-25 p-5  rounded-5 "
-  initial={{ scale: 0.4}}
-  animate={{ scale: 1}}
-  transition={{duration : 0.6}}
-  >
-
-
-
-     {skills.map((skill, index) => (
+    <motion.div
+      className="container bg-light bg-opacity-25 p-5  rounded-5 "
+      initial={{ opacity: 0.5 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
+    >
+      {skills?.map((skill, index) => (
         <SkillBar
           key={index}
           skillImage={skill.image}
@@ -37,10 +31,8 @@ function Skills() {
           skillName={skill.name}
         />
       ))}
-  </motion.div>
-  
-   
-  )
+    </motion.div>
+  );
 }
 
-export default Skills
+export default Skills;

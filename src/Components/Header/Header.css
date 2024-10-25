@@ -46,8 +46,9 @@ button.icon-moon {
   transition: 0.3s all;
 }
 span.icon-close {
+  font-size: 1.7rem;
   cursor: pointer;
-  color: var(--subtitle);
+  color: rgba(255, 0, 0, 0.76);
   transition: 0.3s all;
 }
 
@@ -76,9 +77,11 @@ header .fixed {
   position: fixed;
   inset: 0;
   background: #2324318c;
-  z-index: 99;
+  z-index: 90;
   backdrop-filter: blur(4px);
 }
+
+
 
 @keyframes scaleModal {
   0% {
@@ -92,9 +95,10 @@ header .fixed {
   }
 }
 
-header .fixed ul.modal {
+header .fixed ul.mymodal {
+  
   animation: scaleModal 0.5s 1;
-  width: 50%;
+  width: 75%;
   margin: auto;
   margin-top: 2rem;
   padding: 1rem 2rem;
@@ -102,21 +106,29 @@ header .fixed ul.modal {
   background: var(--secondary);
 }
 
-header .fixed ul.modal li {
+header .fixed ul.mymodal li {
   padding-bottom: 0.77rem;
   padding-top: 0.5rem;
   border-bottom: 2px solid var(--border);
 }
 
-header .fixed ul.modal li a {
+header .fixed ul.mymodal li button {
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  color: white;
+  background: transparent;
   font-size: 1rem;
+  transition: all 3s;
 }
 
-header .fixed ul.modal li:last-child {
+
+
+header .fixed ul.mymodal li:last-child {
   border: none;
 }
 
-header .fixed ul.modal li:first-child {
+header .fixed ul.mymodal li:first-child {
   border: none;
   text-align: right;
   padding-bottom: 0;

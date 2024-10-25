@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
-  const [theme, setTheme] = useState(localStorage.getItem('currentMode') ?? 'dark');
+  const navigate = useNavigate();
+  const [theme, setTheme] = useState(
+    localStorage.getItem("currentMode") ?? "dark"
+  );
   useEffect(() => {
-    
     if (theme === "light") {
       document.body.classList.remove("dark");
       document.body.classList.add("light");
@@ -55,7 +57,7 @@ export default function Header() {
 
       {showModal ? (
         <div className="fixed">
-          <ul className="modal ">
+          <ul className="mymodal">
             <li>
               <span
                 className="icon-close"
@@ -65,26 +67,45 @@ export default function Header() {
               />
             </li>
             <li>
-              <Link onClick={()=>{
-                
-                showModal(false)
-              }} to="/">About</Link>
+              <button
+                onClick={() => {
+                  navigate("/");
+                  setShowModal(false);
+                }}
+              >
+                About
+              </button>
             </li>
-            
+
             <li>
-              <Link  onClick={()=>{
-                showModal(false)
-              }}to="projects">Projects</Link>
+              <button
+                onClick={() => {
+                  navigate("projects");
+                  setShowModal(false);
+                }}
+              >
+                Projects
+              </button>
             </li>
             <li>
-              <Link  onClick={()=>{
-                showModal(false)
-              }}to="skills">Skills</Link>
+              <button
+                onClick={() => {
+                  navigate("skills");
+                  setShowModal(false);
+                }}
+              >
+                Skills
+              </button>
             </li>
             <li>
-              <Link onClick={()=>{
-                showModal(false)
-              }} to="contact-us">Contact</Link>
+              <button
+                onClick={() => {
+                  navigate("contact-us");
+                  setShowModal(false);
+                }}
+              >
+                Contact
+              </button>
             </li>
           </ul>
         </div>
