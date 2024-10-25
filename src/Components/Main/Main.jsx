@@ -2,7 +2,6 @@ import "./Main.css";
 import { useState } from "react";
 import { myProjects } from "./myProjects";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 export default function Main() {
   const [currentActive, setcurrentActive] = useState("all");
@@ -72,13 +71,13 @@ export default function Main() {
                   <p className="subtitle">{item?.subTitle}</p>
                   <div className=" flex icons-box">
                     <div className="flex links-icons">
-                      <Link to={item?.page} target="_blank">
+                      <a href={item?.page} target="_blank">
                         <span className="icon-link" />
-                      </Link>
+                      </a>
 
-                      <Link to={item?.githup} target="_blanck">
+                      <a href={item?.githup} target="_blanck">
                         <span className="icon-github" />
-                      </Link>
+                      </a>
                     </div>
 
                     <div className="flex more-icon">

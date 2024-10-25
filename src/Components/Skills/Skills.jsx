@@ -16,12 +16,7 @@ function Skills() {
     { image: redux, alt: "redux-img", level: 70, name: "Redux" },
   ];
   return (
-    <motion.div
-      className="container bg-light bg-opacity-25 p-5  rounded-5 "
-      initial={{ opacity: 0.5 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.6 }}
-    >
+    <div className="container bg-light bg-opacity-25 p-5  rounded-5 ">
       {skills?.map((skill, index) => (
         <SkillBar
           key={index}
@@ -31,7 +26,7 @@ function Skills() {
           skillName={skill.name}
         />
       ))}
-    </motion.div>
+    </div>
   );
 }
 

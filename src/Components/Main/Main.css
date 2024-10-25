@@ -92,6 +92,7 @@ main section.right-section article.card {
 }
 
 .card .box .title {
+  font-size: 1rem;
   color: var(--title);
   letter-spacing: .06rem;
   text-transform: capitalize;
