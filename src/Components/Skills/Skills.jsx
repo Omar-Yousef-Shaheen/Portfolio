@@ -16,8 +16,8 @@ function Skills() {
     { image: redux, alt: "redux-img", level: 70, name: "Redux" },
   ];
   return (
-    <div className="container bg-light bg-opacity-25 p-5  rounded-5 ">
-      {skills?.map((skill, index) => (
+    <div className="container bg-light bg-opacity-25 p-5  vh-100 rounded-5 ">
+      {skills.map((skill, index) => (
         <SkillBar
           key={index}
           skillImage={skill.image}
