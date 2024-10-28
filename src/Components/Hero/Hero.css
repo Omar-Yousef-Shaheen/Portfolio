@@ -49,11 +49,17 @@ section.hero .left-section .all-icons.flex a.icon {
   color: var(--subtitle);
   font-weight: bold;
   /* border: 1px solid var(--subtitle);   */
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
+  padding: 4px;
   border-radius: 50%;
   background: var(--bgHeader);
   transition: 0.3s all;
+}
+
+.w-h{
+  width: 40px;
+  height: 40px;
 }
 
 section.hero .left-section .all-icons.flex a.icon:hover {

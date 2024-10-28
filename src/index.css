@@ -77,6 +77,10 @@ a {
   width: 70px;
 }
 
+.max-height{
+  min-height: 90px !important;
+}
+
 .flex {
   display: flex;
   align-items: center;
