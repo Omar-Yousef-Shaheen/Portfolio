@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Header.css";
 import { Link, useNavigate } from "react-router-dom";
-
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();

@@ -10,12 +10,12 @@ import linkdin from "../../assets/img/linkdin.png";
 export default function Hero() {
   return (
     <motion.section
-      className="hero flex"
+      className="hero flex container-sm "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="left-section">
+      <div className="left-section ">
         <h1 className="title">
           I'm
           <span className="my-name"> Omar Youssef</span>,
@@ -31,6 +31,7 @@ export default function Hero() {
           technologies such as HTML5, CSS3, and JavaScript, along with libraries
           and frameworks like React.js, I can transform complex ideas into
           simple and attractive user interfaces.
+          <br />
           <br />
           My goal is to deliver innovative and efficient tech solutions that
           help businesses and individuals achieve their digital goals. If you
