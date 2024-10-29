@@ -10,7 +10,7 @@ import linkdin from "../../assets/img/linkdin.png";
 export default function Hero() {
   return (
     <motion.section
-      className="hero flex container-sm "
+      className="hero flex container-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}

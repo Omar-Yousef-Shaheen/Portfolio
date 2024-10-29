@@ -95,3 +95,14 @@ section.hero .left-section .all-icons.flex a.icon:hover {
     margin-bottom: 1rem;
   }
 }
+
+@media (max-width: 425px) {
+  section.hero {
+    padding: 25px 10px;
+  }
+  section.hero .left-section .all-icons.flex {
+   
+    gap: 26px;
+    
+  }
+}
