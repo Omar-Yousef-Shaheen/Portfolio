@@ -49,9 +49,9 @@ export default function Hero() {
           <a href="https://wa.me/201141214658" target="_blank" className="icon">
             <img src={whatsapp} className="w-100 pt-1" alt="" />
           </a>
-          <a href="#contact-us" className="icon ">
+          {/* <a href="#contact-us" className="icon ">
             <img src={gmail} className="w-100" alt="" />
-          </a>
+          </a> */}
           <a
             href="https://www.linkedin.com/in/omar-shahen/"
             target="_blank"
