@@ -27,7 +27,7 @@ function SkillBar({ skillImage, skillAlt, skillLevel, skillName }) {
           style={{ width: `${progress}%` }}
           initial={{ width: 0 }}
           animate={{ width: `${progress}%` }}
-          transition={{ duration: 0.8 }}
+          transition={{ delay: 0.5 }}
         >
           {progress}%
         </motion.div>

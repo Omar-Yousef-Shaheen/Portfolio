@@ -5,6 +5,8 @@ section.hero {
   gap: 26px;
 }
 
+
+
 /* 
 ======================
 1-leftSection
@@ -106,3 +108,11 @@ section.hero .left-section .all-icons.flex a.icon:hover {
     
   }
 }
+
+
+/* 
+======================
+Last Section
+======================
+*/
+

@@ -8,6 +8,7 @@ import Hero from "./Components/Hero/Hero";
 import Main from "./Components/Main/Main";
 import Layout from "./Components/Layout/Layout";
 import Skills from "./Components/Skills/Skills";
+import InfoResume from "./Components/InfoResume/InfoResume";
 
 const router = createBrowserRouter(
   [
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
         { path: "projects", element: <Main /> },
         { path: "skills", element: <Skills /> },
         { path: "contact-us", element: <Contact /> },
+        // { path: "resume", element: <InfoResume /> },
       ],
     },
   ],

@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import "./Contact.css";
 import { useForm, ValidationError } from "@formspree/react";
-import doneAnimation from '../../animation/done.animation/Animation - 1720960721381.json'
-import contactAnimation from '../../animation/contact.animation/Animation - 1720961794535.json'
+import doneAnimation from "../../animation/done.animation/Animation - 1720960721381.json";
+import contactAnimation from "../../animation/contact.animation/Animation - 1720961794535.json";
 import Lottie from "lottie-react";
 import { motion } from "framer-motion";
+import InfoResume from "../InfoResume/InfoResume";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mwpepogy");
@@ -15,10 +16,12 @@ export default function Contact() {
     }
   }, [state.succeeded]);
   return (
-    <motion.section className="contact-us" id="contact-us"
-    initial={{ scale: 0.5}}
-    animate={{ scale: 1}}
-    transition={{duration : 0.6}}
+    <motion.section
+      className="contact-us"
+      id="contact-us"
+      initial={{ scale: 0.5 }}
+      animate={{ scale: 1 }}
+      transition={{ duration: 0.6 }}
     >
       <div className="flex main-title">
         <h1 className="title flex">
@@ -62,7 +65,11 @@ export default function Contact() {
           </button>
           {state.succeeded ? (
             <div className="message-Form flex">
-              <Lottie loop={false} style={{height : 35 }} animationData={doneAnimation}/>
+              <Lottie
+                loop={false}
+                style={{ height: 35 }}
+                animationData={doneAnimation}
+              />
               <p>Your message has been sent successfully. ✌</p>
             </div>
           ) : (
@@ -70,9 +77,10 @@ export default function Contact() {
           )}
         </form>
         <div className="animation">
-          <Lottie style={{height : 440 }} animationData={contactAnimation}/>
+          <Lottie style={{ height: 440 }} animationData={contactAnimation} />
         </div>
       </div>
+      <InfoResume />
     </motion.section>
   );
 }

@@ -52,7 +52,7 @@ body {
   width: 80%;
   margin: auto;
   /* background: var(--bgHeader); */
-  padding-inline: 3rem;
+  padding-inline: 2rem;
 }
 
 .line {
@@ -77,6 +77,10 @@ a {
   width: 70px;
 }
 
+.w-5{
+  width: 40px;
+}
+
 .max-height{
   min-height: 90px !important;
 }
@@ -98,6 +102,7 @@ a {
 .parent-layout{
   margin-block: 100px;
 }
+
 .layout{
   
   display: flex;
