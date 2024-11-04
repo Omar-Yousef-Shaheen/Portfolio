@@ -1,5 +1,6 @@
 import phone from "../../assets/img/phone.png";
 import address from "../../assets/img/location.png";
+import resume from "/Omar-Yousef-shaheen.pdf";
 function InfoResume() {
   return (
     <section className=" bg-opacity-75 bg-black p-4 rounded-4">
@@ -20,7 +21,7 @@ function InfoResume() {
         <div>
           <a
             className="text-white border border-1 border-light py-2 px-3 rounded-3"
-            href="/Omar-Yousef-shaheen.pdf"
+            href={resume}
             download="Omar-Yousef-shaheen.pdf"
           >
             Download Resume
