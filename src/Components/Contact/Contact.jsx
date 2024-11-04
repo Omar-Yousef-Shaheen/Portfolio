@@ -23,7 +23,8 @@ export default function Contact() {
       animate={{ scale: 1 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="flex main-title">
+      <InfoResume />
+      <div className="flex main-title mt-5">
         <h1 className="title flex">
           <span className="icon-envelope" />
           Contact Us
@@ -80,7 +81,6 @@ export default function Contact() {
           <Lottie style={{ height: 440 }} animationData={contactAnimation} />
         </div>
       </div>
-      <InfoResume />
     </motion.section>
   );
 }

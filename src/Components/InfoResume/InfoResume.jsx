@@ -1,10 +1,9 @@
 import phone from "../../assets/img/phone.png";
-import gmail from "../../assets/img/Gmail.png";
 import address from "../../assets/img/location.png";
 function InfoResume() {
   return (
-    <div className=" bg-opacity-75 bg-black p-4 rounded-4">
-      <div className=" flex  justify-content-between gap-5">
+    <section className=" bg-opacity-75 bg-black p-4 rounded-4">
+      <div className=" flex flex-column flex-md-row justify-content-between gap-5">
         <div className="phone flex   gap-3 align-items-center  ">
           <div>
             <img className="w-5" src={phone} />
@@ -19,10 +18,16 @@ function InfoResume() {
           <span>Cairo,Maadi</span>
         </div>
         <div>
-          <button className="btn btn-light fw-semibold">Download Resume</button>
+          <a
+            className="text-white border border-1 border-light py-2 px-3 rounded-3"
+            href="/Omar-Yousef-shaheen.pdf"
+            download="Omar-Yousef-shaheen.pdf"
+          >
+            Download Resume
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
